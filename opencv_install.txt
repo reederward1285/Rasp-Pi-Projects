@@ -1,0 +1,14 @@
+#!/bin/sh
+sudo apt-get -y purge wolfram-engine
+sudo apt-get -y purge libreoffice*
+sudo apt-get -y clean
+sudo apt-get -y autoremove
+echo "OpenCV installation by learnOpenCV.com"
+cvVersion="masrer"
+rm -rf opencv/build
+rm -rf opencv_contrib/build
+mkdir installation
+mkdir installation/OpenCV-"$cvVersion"
+cwd=$(pwd)
+sudo apt -y update
+sudo apt -y upgrade
