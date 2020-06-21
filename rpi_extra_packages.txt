@@ -1,0 +1,15 @@
+sudo apt-get install -y fritzing
+sudo apt-get install -y audacity
+sudo apt-get install -y flowblade
+sudo apt-get install -y gimp
+sudo apt-get install -y inkscape
+sudo apt-get install -y kicad
+sudo apt-get install -y blender
+sudo apt-get install -y thunderbird
+sudo apt-get install -y hexchat
+sudo apt-get install -y empathy
+sudo apt-get install -y lmms
+sudo apt-get install -y cheese
+sudo apt-get install -y simplescreenrecorder
+sudo apt-get install -y gnome-screenshot
+sudo apt-get install -y firefox-esr

@@ -1,0 +1,8 @@
+sudo apt-get install update -y
+sudo apt-get install upgrade -y
+sudo apt-get install python3-pip
+sudo pip3 install adafruit-blinka
+sudo pip3 install imapclient
+cd
+wget https://raw.githubusercontent.com/adafruit/Adafruit_Learning_System_Guides/master/Raspberry_Pi_E-mail_Notifier_Using_LEDs/Raspberry_Pi_E-mail_Notifier_Using_LEDs.py
+sudo apt-get install python-pip
