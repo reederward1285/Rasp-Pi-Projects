@@ -1,0 +1,32 @@
+# Install General Dependencies
+sudo apt-get -y update && sudo apt -y update
+sudo apt-get -y install git python3-pip gcc bison flex npm maven
+
+# Install Java 8 jre + jdk
+sudo apt -y install libcanberra-gtk-module
+echo ""
+echo "+---------------+"
+echo "| Select Java 8 |"
+echo "+---------------+"
+echo ""
+sudo apt -y install openjdk-8-jre
+sudo update-alternatives --config java
+sudo apt -y install openjdk-8-jdk
+sudo update-alternatives --config javac
+
+# Install NetBeans
+wget https://apache.lauf-forum.at/netbeans/netbeans/12.0/Apache-NetBeans-12.0-bin-linux-x64.sh
+sudo chmod +x Apache-NetBeans-12.0-bin-linux-x64.sh
+./Apache-NetBeans-12.0-bin-linux-x64.sh
+
+# Install Inkscape
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt -y update
+sudo apt -y install inkscape
+sudo chmod +x Source\ Code/install_dependencies.txt && ./Source\ Code/install_dependencies.txt --full
+
+# Install Universal G-Code Sender
+git clone https://github.com/reederward1285/Universal-G-Code-Sender.git
+
+# Do one last update
+sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt -y update && sudo apt -y upgrade
