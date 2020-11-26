@@ -1,0 +1,5 @@
+sudo apt-get -y install meson gobject-instrospection appstream-util libgirepository1.0-dev
+pip3 install pypandoc==1.4 regex
+git clone https://gitlab.gnome.org/somas/apostrophe/
+cd apostrophe
+meson builddir --prefix=/usr
